@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form id="form1" name="form1" method="post" action="/emps/emp_edit_post/" enctype="multipart/form-data">
+{#     {% csrf_token %}#}
+  <table width="200" border="1">
+    <tr>
+      <td>name</td>
+      <td><input type="text" name="nm" id="name22" value="{{ res.name }}" /></td>
+    </tr>
+    <tr>
+      <td>age</td>
+      <td><input type="text" name="ag" id="age22" value="{{ res.age }}" /></td>
+    </tr>
+
+       <tr>
+      <td>Contact Number</td>
+      <td><input type="text" name="cn" id="age22" value="{{ res.contact }}" /></td>
+    </tr>
+{#  <tr>#}
+{#        <td>gender</td>#}
+{#         <td>#}
+{#          {% if res.gen22 == "M" %}#}
+{##}
+{#          male<input type="radio" name="gen22" id="gen1" value="M" checked="checked"/><br/>#}
+{##}
+{##}
+{#            female<input type="radio" name="gen22" id="gen2" value="F" />#}
+{##}
+{#        {% else %}#}
+{##}
+{#        male<input type="radio" name="gen22" id="gen3" value="M"/><br/>#}
+{##}
+{#        female<input type="radio" name="gen22" id="gen4" value="F" checked="checked"/><br/>#}
+{#        {% endif %}#}
+{#        </td>#}
+{#      </tr>#}
+
+      <tr>
+      <td>photo</td>
+      <td>
+        <input type="file" name="pics" id="pho22"  /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="button" id="button" value="update" /></td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>
